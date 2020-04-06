@@ -38,7 +38,7 @@ function Pin(props) {
               padding={2}
               bottom
               left>
-              <Button text="Open" />
+              <Button text="Open" onClick={props.data.open}/>
             </Box>
             <Box
               position="absolute"

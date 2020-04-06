@@ -4,7 +4,6 @@ import SearchBar from '../SearchBar'
 import { Box, Text, Modal, Image, IconButton, Touchable, Button, SearchField, Link } from "gestalt"
 
 function NavBar(props) {
-
   return (
     <Box>
       <Box padding={5}
@@ -13,7 +12,7 @@ function NavBar(props) {
       alignItems="center">
         <IconButton accessibilityLabel="Profile" icon={props.info.icon} size="md" />
         <Box flex="grow">
-          <SearchBar />
+          <SearchBar onChange={props.onChange}/>
         </Box>
         <Box>
           <Button 
