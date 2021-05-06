@@ -166,7 +166,6 @@ const handleClose = () => {
 }
 
 const fetchData = (search) => {
-	console.log("AAAAAAAAAAAAA")
   return new Promise((resolve, reject) => {
     setTimeout(() => { 
       const pins = fakeData.map(pin => {
@@ -179,7 +178,6 @@ const fetchData = (search) => {
         }
       }).filter(pin => {
         if (!search) {
-        	console.log("AAAAAAAAAAAAAAAAAAAAA")
           return true
         }
         console.log(pin)
